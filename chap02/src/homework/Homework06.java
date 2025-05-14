@@ -18,7 +18,8 @@ public class Homework06 {
 		System.out.println("입력한 숫자의 제곱은 " + multiple + "입니다.");
 		
 		
-		
+		// git 설정
+		// git push 설정하기
 	
 		
 		
