@@ -16,7 +16,7 @@ public class Homework3 {
 		int num3 = scanner.nextInt();
 		
 		int minNum = num1;
-		minNum = num2 < minNum ? (num3 < minNum ? num3 : num2 ) : (num2 < minNum ? num2 : num1);
+		minNum = num2 < minNum ? (num3 < num2 ? num3 : num2 ) : (num3 < minNum ? num3 : num1);
 		
 		System.out.println("세 수 중에서 가장 작은 수는" + minNum + "입니다.");
 		

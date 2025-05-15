@@ -8,8 +8,6 @@ public class Homework3 {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-//		int friendNum = (int) (Math.random() * 50) + 1;		
-//		int candyNum = (int) (Math.random() * 100) + 1;
 		System.out.print("친구 수: ");
 		int friendNum = scanner.nextInt();		
 		System.out.print("사탕 수: ");

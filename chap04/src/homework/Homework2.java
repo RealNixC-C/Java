@@ -20,29 +20,26 @@ public class Homework2 {
 		// 장점: 1) 코드 가독성이 좋아짐 2) 코드의 중첩을 줄일 수 있음
 		if (month < 1 || month > 12) {
 			System.out.println("해당하는 계절이 없습니다.");
-			return;
-			
+			return;	
 		} 
+		
 		if (month >= 3 && month <= 5) {
 			result = "봄";
-		}
-		if (month >= 6 && month <= 8) {
-			result = "여름";
+		} 	else if (month >= 6 && month <= 8) {
+			result = "여름 ";
 			if (temperature >= 35) {
-				result = "여름 폭염 경보";
+				result += "폭염 경보";
 			} else if (temperature >= 33) { 
-				result = "여름 폭염 주의보";
+				result += "폭염 주의보";
 			}
-		} 
-		if (month >= 9 && month <= 11) {
+		} else if (month >= 9 && month <= 11) {
 			result = "가을";
-		}
-		if (month == 1 || month == 2 || month == 12) {
-			result = "겨울";
+		} else {
+			result = "겨울 ";
 			if (temperature <= -15) {
-				result = "겨울 한파 경보";
+				result += "한파 경보";
 			} else if (temperature <= -12) { 
-				result = "겨울 한파 주의보";
+				result += "한파 주의보";
 			}
 		}
 		
