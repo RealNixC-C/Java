@@ -10,6 +10,7 @@ public class Homework02 {
 		
 		System.out.print("가로길이를 입력하세요: ");
 		double width = scanner.nextDouble();
+		
 		System.out.print("세로길이를 입력하세요: ");
 		double height = scanner.nextDouble();
 		
