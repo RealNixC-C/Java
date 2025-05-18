@@ -8,7 +8,7 @@ public class Homework4 {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.print("코드를 입력하세요: ");
+		System.out.print("수집된 코드 : ");
 		int code = scanner.nextInt();
 		
 		

@@ -8,7 +8,7 @@ public class Homework5 {
 
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.print("주민번호를 (-) 포함하여 입력하세요 : ");
+		System.out.print("주민번호를 (-)  : ");
 		char genderByNum = scanner.nextLine().charAt(7);
 		int gender = genderByNum - '0';
 		

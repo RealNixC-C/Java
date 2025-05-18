@@ -18,7 +18,7 @@ public class Homework4 {
 		int eng = scanner.nextInt();
 		
 		int total = kor + math + eng;
-		int avg = (kor + math + eng) / 3;
+		double avg = total / 3.0;
 		
 		String result = kor >= 60 && math >= 60 && eng >= 60 && avg >= 90 ? "휴대폰을 바꿀 수 있습니다.": "휴대폰을 바꿀 수 없습니다.";
 		
@@ -26,7 +26,7 @@ public class Homework4 {
 		System.out.println("수학 : " + math);
 		System.out.println("영어 : " + eng);
 		System.out.println("합계 : " + total + "점");
-		System.out.println("평균 : " + avg + "점");
+		System.out.println("평균 : " + (int) avg + "점");
 		System.out.println(result);
 		
 		
