@@ -5,34 +5,22 @@ import java.util.Scanner;
 public class Homework04 {
 
 	public static void main(String[] args) {
-		
+
+
 		Scanner scanner = new Scanner(System.in);
 		
-		while(true) {
-			System.out.print("정수를 입력하세요: ");
-			int num = scanner.nextInt();
-			
-			if (num < 0) {
-				System.out.println("양수만 입력해주세요.");
-				continue;
-			} else if (num > 9) {
-				System.out.println("9이하의 숫자를 입력해주세요.");
-				continue;
-			} else if (num == 0) {
+		do {
+			System.out.println("게임을 실행합니다!");
+			System.out.print("게임을 다시 플레이하시겠습니까?(yes/no) : ");
+			String confirm = scanner.nextLine();
+			if (confirm.equals("no")) {
 				break;
 			} else {
-				for (; num <= 9; num++) {
-					System.out.println("=== " + num + "단 ===");
-					for (int i = 1; i <= 9; i++) {
-						System.out.println(num + "*" + i +"=" + (num * i));
-					}
-					System.out.println();
-				}
+				continue;
 			}
-		}
-		
-		
-		
-		System.out.println("프로그램이 종료되었습니다.");
+		} while (true);
+		System.out.println("게임을 종료합니다.");
+			
 	}
+
 }

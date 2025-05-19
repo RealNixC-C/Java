@@ -6,19 +6,22 @@ public class Homework05 {
 
 	public static void main(String[] args) {
 
+		
 		Scanner scanner = new Scanner(System.in);
 		
+		int sum = 0;
 		
 		for (;;) {
-			System.out.print("입력 : ");
-			String str = scanner.nextLine();
-			System.out.println(str);
-			if (str.equals("탈출")) {
+			System.out.print("숫자(0을 입력하면 종료) : ");
+			int num = scanner.nextInt();
+			if (num > 0) {
+				sum += num;
+			}
+			if (num == 0) {
 				break;
 			}
 		}
-		System.out.println("프로그램 종료");
-		
+		System.out.println("양수의 합계 : " + sum);
 	}
 
 }

@@ -5,25 +5,20 @@ import java.util.Scanner;
 public class Homework03 {
 
 	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
 		
-		Scanner sc = new Scanner(System.in);
-		
-		int sum = 0;
-		
-		while(true) {
-			System.out.print("1~50 사이의 정수를 입력하세요: ");
-			int num = sc.nextInt();
+		for (;;) {
+			System.out.print("입력 : ");
+			String str = scanner.nextLine();
+			System.out.println(str);
 			
-			if (num < 1 || num > 50) {
-				continue;
-			} else {
-				for (int i = 1; i <= num; i++) {
-					sum += i;
-				}
+			if (str.equals("탈출")) {
+				break;
 			}
-			System.out.println("정수(1~50) : " + num);
-			System.out.println("합계 : " + sum);
-			break;
 		}
+		System.out.println("프로그램 종료");
+		
 	}
+
 }

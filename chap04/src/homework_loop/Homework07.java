@@ -6,22 +6,25 @@ public class Homework07 {
 
 	public static void main(String[] args) {
 
-		
 		Scanner scanner = new Scanner(System.in);
-		
-		int sum = 0;
-		
-		for (;;) {
-			System.out.print("숫자(0을 입력하면 종료) : ");
-			int num = scanner.nextInt();
-			if (num > 0) {
-				sum += num;
+		System.out.print("정수 : ");
+		int num = scanner.nextInt();
+
+		String clap = "";
+
+		if (num <= 0) {
+			System.out.println("양수가 아닙니다");
+		} else {
+			for (int i = 1; i <= num; i++) {
+				if (i % 2 == 0) {
+					clap += "수";
+				} else {
+					clap += "박";
+				}
 			}
-			if (num == 0) {
-				break;
-			}
+
 		}
-		System.out.println("양수의 합계 : " + sum);
+		System.out.println(clap);
 	}
 
 }

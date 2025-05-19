@@ -1,4 +1,4 @@
-package homework;
+package homework_condition;
 
 import java.util.Scanner;
 
