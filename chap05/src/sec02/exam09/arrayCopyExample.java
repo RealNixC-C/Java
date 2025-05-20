@@ -2,7 +2,7 @@ package sec02.exam09;
 
 import java.util.Arrays;
 
-public class arrayCopyExample {
+public class ArrayCopyExample {
 
 	public static void main(String[] args) {
 
