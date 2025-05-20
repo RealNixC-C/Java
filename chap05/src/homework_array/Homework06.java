@@ -14,7 +14,7 @@ public class Homework06 {
 		
 		System.out.print("배열의 크기를 입력하세요 : ");
 		int arrange = scanner.nextInt();
-		
+
 		scanner.nextLine();
 		// 이 줄에서 숫자만 읽고 줄 바꿈 문자 (\n)는 소비하지 않기 때문에,
 		// 그 다음 scanner.nextLine()이 실행되면 아무 입력도 없이 줄 바꿈만 읽어버림
@@ -64,11 +64,13 @@ public class Homework06 {
 }
 
 // 새로 배운점 scanner.nextLine() 는 개행문자를 남기지 않는다
-// scanner.nextInt()는 개행 문자를 남긴다
+//scanner.nextInt()는 개행 문자(Enter)를 남긴다
 //scanner.nextInt() 다음으로 scanner.nextLine()가 오게된다면
-//nextLine()에 남은 Enter 개행문자가 nextLine()으로 출력되게된다
+//nextLine()에 남은 개행문자가(Enter) nextLine()으로 출력되게된다
 
-//둘 다 **nextInt() → nextInt()**로 이어지니까 문제 없음.
+//ex) 1번째 문자열 : 2번째 문자열 :  
+
+//**nextInt() → nextInt()** 이어지는경우 개행문자를 제외하고 숫자만 읽는다
 //
 //nextInt()는 숫자만 뽑고 개행(\n)은 버퍼에 남기지만,
-//다음에도 또 nextInt()를 호출하면 그 개행은 무시하고 다음 숫자만 잘 읽어요
+//다음에도 또 nextInt()를 호출하면 그 개행은 무시하고 다음 숫자만 잘 읽어요 // GPT

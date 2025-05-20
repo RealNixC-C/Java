@@ -14,7 +14,6 @@ public class Homework05 {
 		int lose = 0;
 		int draw = 0;
 
-
 		while (true) {
 
 			System.out.print("가위바위보 : ");
