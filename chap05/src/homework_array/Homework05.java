@@ -15,7 +15,6 @@ public class Homework05 {
 		int draw = 0;
 
 		while (true) {
-
 			System.out.print("가위바위보 : ");
 			String user = scanner.nextLine();
 			if ("stop".equals(user)) {
@@ -39,7 +38,6 @@ public class Homework05 {
 				userRpc = 2;
 				break;
 			}
-
 			int computerRpc = (int) (Math.random() * 3);
 			String computer = "";
 			switch (computerRpc) {
@@ -53,6 +51,7 @@ public class Homework05 {
 				computer = choices[2];
 				break;
 			}
+//			String computer = choice[computerRpc]; 훨씬 간단하게 넣는법
 
 			System.out.println("컴퓨터 : " + computer);
 			System.out.println("사용자 : " + user);
@@ -70,10 +69,8 @@ public class Homework05 {
 				lose++;
 			}
 			total++;
-			
 			System.out.println();
 		}
-		
 		System.out.println(total + "전 " + win + "승 " + draw + "무 " + lose + "패");
 
 	}

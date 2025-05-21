@@ -33,12 +33,12 @@ public class Homework06 {
 			System.out.print("더 값을 입력하시겠습니까?(Y/N) : ");
 			String confirm = scanner.nextLine();
 			
-			if (confirm.equalsIgnoreCase("y")) {
+			if ("y".equalsIgnoreCase(confirm)) {
 				System.out.print("더 입력하고 싶은 개수 : ");
 				int moreArrange = scanner.nextInt();
 				scanner.nextLine(); // 개행 문자 제거
-				aRR = Arrays.copyOf(aRR, aRR.length + moreArrange);
-				for (; inArray < aRR.length; inArray++) {
+				aRR = Arrays.copyOf(aRR, aRR.length + moreArrange); // 새로운 배열을 기존 배열에 생성하여 참조값을 변경시킴
+				for (int i = inArray; i < aRR.length; inArray++) {
 					System.out.print(count + "번째 문자열 : ");
 					String userStr = scanner.nextLine();
 					aRR[inArray] = userStr;

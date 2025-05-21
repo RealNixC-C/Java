@@ -21,8 +21,11 @@ public class Homework02 {
 			sum += num;
 		}
 		
-		for (int i = 0; i < arr.length; i++) {
-			System.out.print(arr[i] + " ");
+//		for (int i = 0; i < arr.length; i++) {
+//			System.out.print(arr[i] + " ");
+		for (int out : arr) {
+			System.out.print(out + " ,");
+		
 		}
 		System.out.println();
 		System.out.println("총 합 : " + sum);
