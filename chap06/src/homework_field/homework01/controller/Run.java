@@ -15,9 +15,11 @@ public class Run {
 		emp2.name = "이영희";
 		emp2.team = "경영지원팀";
 		
-		System.out.println("이름    팀");
-		System.out.println(emp1.name + "  " + emp1.team);
-		System.out.println(emp2.name + "  " + emp2.team);
+		System.out.println("이름: " + emp1.name);
+		System.out.println("팀: " + emp1.team);
+		
+		System.out.println("이름: " + emp2.name);
+		System.out.println("팀: " + emp2.team);
 		
 	}
 
