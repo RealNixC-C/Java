@@ -25,7 +25,7 @@ public class Run {
 		int count = 0;
 		
 		System.out.println("=== 사원 입력 받기===");
-		while (true) {
+		stop: while (true) {
 			System.out.print("이름 : ");
 			String name = scanner.nextLine();
 			System.out.print("나이 : ");
@@ -43,25 +43,22 @@ public class Run {
 			employee[count] = new Employee(name, age, height, weight, salary, dept);
 			count ++;
 			
+			while(true)	{	 
 			System.out.print("계속 추가하시겠습니까?");
 			String addMore = scanner.nextLine();
-			
 			if("y".equalsIgnoreCase(addMore)) {
-				continue;
-			} else if ("n".equalsIgnoreCase(addMore)) {
 				break;
-			} 
+			} else if ("n".equalsIgnoreCase(addMore)) {
+				break stop;
+			} else {
+				System.out.println("잘못된 입력입니다. 다시 입력하세요.");
+			}
+			
+			}
 		}
-		
-		for(int i = 0; i <= count; i++) {
+		for(int i = 0; i < count; i++) {
 			System.out.println(employee[i].toString());
 		}
-		
-		
-		
-		
-		
-		
 	}
 
 }

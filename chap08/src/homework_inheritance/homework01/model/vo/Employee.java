@@ -16,8 +16,7 @@ public class Employee extends Person {
 
 	@Override
 	public String toString() {
-		String result = "===" + getName() + "===\n나이 : " + getAge() + "\n키 : " + getHeight() + "\n몸무게 : " 
-	+ getWeight() + "\n학년 : " + salary + "\n전공 : " + dept;
+		String result = super.toString() + "\n급여 : " + salary + "\n부서 : " + dept;
 		return result;
 	}
 

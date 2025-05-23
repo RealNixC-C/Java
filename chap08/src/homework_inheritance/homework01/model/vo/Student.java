@@ -16,8 +16,7 @@ public class Student extends Person {
 
 	@Override
 	public String toString() {
-		String result = "===" + getName() + "===\n나이 : " + getAge() + "\n키 : " + getHeight() + "\n몸무게 : " 
-	+ getWeight() + "\n학년 : " + grade + "\n전공 : " + major;
+		String result = super.toString() + "\n학년 : " + grade + "\n전공 : " + major;
 		return result;
 	}
 

@@ -16,7 +16,8 @@ public class Person {
 	}
 	
 	public String toString() {
-		return "";
+		String result = "=== " + name + " ===\n나이 : " + age + "\n키 : " + height + "\n몸무게 : " + weight;
+		return result;
 	}
 
 	public String getName() {
