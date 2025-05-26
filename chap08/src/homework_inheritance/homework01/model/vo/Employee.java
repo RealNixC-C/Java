@@ -14,12 +14,6 @@ public class Employee extends Person {
 		this.dept = dept;
 	}
 
-	@Override
-	public String toString() {
-		String result = super.toString() + "\n급여 : " + salary + "\n부서 : " + dept;
-		return result;
-	}
-
 	public int getSalary() {
 		return salary;
 	}
@@ -36,6 +30,10 @@ public class Employee extends Person {
 		this.dept = dept;
 	}
 
-	
+	@Override
+	public String toString() {
+		String result = super.toString() + "\n급여 : " + salary + "\n부서 : " + dept;
+		return result;
+	}
 	
 }

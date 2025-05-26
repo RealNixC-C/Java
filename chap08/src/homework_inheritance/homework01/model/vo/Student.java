@@ -14,12 +14,6 @@ public class Student extends Person {
 		this.major = major;
 	}
 
-	@Override
-	public String toString() {
-		String result = super.toString() + "\n학년 : " + grade + "\n전공 : " + major;
-		return result;
-	}
-
 	public int getGrade() {
 		return grade;
 	}
@@ -36,8 +30,10 @@ public class Student extends Person {
 		this.major = major;
 	}
 
-	
-	
-	
+	@Override
+	public String toString() {
+		String result = super.toString() + "\n학년 : " + grade + "\n전공 : " + major;
+		return result;
+	}
 	
 }
