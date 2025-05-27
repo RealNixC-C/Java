@@ -22,9 +22,11 @@ public class Run {
 		}
 		
 		Employee[] employee = new Employee[10];
-		int count = 0;
 		
+		int count = 0;
 		System.out.println("=== 사원 입력 받기===");
+		
+		
 		stop: while (true) {
 			System.out.print("이름 : ");
 			String name = scanner.nextLine();

@@ -10,13 +10,17 @@ public class Run {
 
 		Menu[] menu = new Menu[5];
 		
-		menu[0] = new Dish("새우볶음밥", 8000, "새우");
-		menu[1] = new Drink("오렌지쥬스", 6000, "오렌지");
-		menu[2] = new Dish("라면", 4000, "면");
-		menu[3] = new Drink("메론소다", 3000, "메론");
-		menu[4] = new Dish("스테이크", 8000, "한우");
+		for (int i = 0; i < menu.length; i++) {
+			int	ranNum = (int)(Math.random() * 2);
+			if(ranNum == 0) {
+				menu[i] = new Dish("새우볶음밥", 8000, "새우"); 
+			} else {
+				menu[i] = new Drink("오렌지쥬스", 6000, "오렌지");
+			}
+		}
 		
 		for(Menu onMenu : menu) {
+			
 			onMenu.cook();
 		}
 	}
