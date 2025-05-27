@@ -1,6 +1,6 @@
-package homework_inheritance.homework02.run;
+package homework_intheritance.homework02.run;
 
-import homework_inheritance.homework02.view.CakeMenu;
+import homework_intheritance.homework02.view.CakeMenu;
 
 public class Run {
 

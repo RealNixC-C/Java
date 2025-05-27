@@ -1,9 +1,9 @@
-package homework_inheritance.homework01;
+package homework_intheritance.homework01;
 
 import java.util.Scanner;
 
-import homework_inheritance.homework01.model.vo.Employee;
-import homework_inheritance.homework01.model.vo.Student;
+import homework_intheritance.homework01.model.vo.Employee;
+import homework_intheritance.homework01.model.vo.Student;
 
 public class Run {
 

@@ -1,4 +1,4 @@
-package homework_inheritance.homework01.model.vo;
+package homework_intheritance.homework01.model.vo;
 
 public class Employee extends Person {
 

@@ -1,4 +1,4 @@
-package homework_inheritance.homework02.model.vo;
+package homework_intheritance.homework02.model.vo;
 
 public class GreenTea extends Cake {
 

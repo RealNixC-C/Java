@@ -1,6 +1,6 @@
-package homework_inheritance.homework02.controller;
+package homework_intheritance.homework02.controller;
 
-import homework_inheritance.homework02.model.vo.GreenTea;
+import homework_intheritance.homework02.model.vo.GreenTea;
 
 public class GreenTeaController {
 

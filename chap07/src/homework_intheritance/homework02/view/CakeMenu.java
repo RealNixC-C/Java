@@ -1,9 +1,9 @@
-package homework_inheritance.homework02.view;
+package homework_intheritance.homework02.view;
 
 import java.util.Scanner;
 
-import homework_inheritance.homework02.controller.ChocolateController;
-import homework_inheritance.homework02.controller.GreenTeaController;
+import homework_intheritance.homework02.controller.ChocolateController;
+import homework_intheritance.homework02.controller.GreenTeaController;
 
 public class CakeMenu {
 	
