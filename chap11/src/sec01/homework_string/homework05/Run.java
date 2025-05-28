@@ -13,6 +13,16 @@ public class Run {
 		System.out.print("생년월일 : ");
 		String birth = sc.nextLine();
 		
+		String pw = "";
+		
+		pw += name.charAt(0);
+		pw += birth.substring(2, 4);
+		pw += birth.substring(6);
+		pw += name.substring(1);
+		
+		System.out.println(pw);
+		
+		
 		
 	}
 
