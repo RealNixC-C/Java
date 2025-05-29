@@ -20,7 +20,6 @@ public class Run {
 		}
 		
 		for(Menu onMenu : menu) {
-			
 			onMenu.cook();
 		}
 	}

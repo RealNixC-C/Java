@@ -16,7 +16,6 @@ public class Run {
 		for (int i = 0; i < strArr.length; i++) {
 			String[] info = strArr[i].split(",");
 			for (int j = 0; j < info.length; j++) {
-
 				switch (j) {
 				case 0:
 					name = info[j];
@@ -31,7 +30,6 @@ public class Run {
 					gender = info[j].charAt(0);
 					break;
 				}
-				
 			}
 			Person person = new Person(name, age, address, gender);
 			System.out.println(person.toString());

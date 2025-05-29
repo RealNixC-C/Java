@@ -19,7 +19,9 @@ public class Quiz2 {
 //	2) ab
 
 	public static void main(String[] args) {
+		
 		Scanner sc = new Scanner(System.in);
+		
 		String str1 = sc.nextLine(); // 원본 문자열
 		String str2 = sc.nextLine(); // 삭제할 문자들
 		System.out.println(deleteChar(str1, str2));
@@ -32,7 +34,6 @@ public class Quiz2 {
 			
 			// 삭제할 문자열에 포함되어 있지 않은 경우만 추가
 			if (str2.indexOf(c) == -1) {
-			
 				result += c; // 문자 하나씩 붙이기
 			}
 			

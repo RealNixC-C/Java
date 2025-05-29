@@ -7,8 +7,13 @@ public class Practice {
 		
 		String[] strArr = str.split(" ");
 		
+		for(int i = 0; i < strArr.length; i++) {
+			if(strArr[i].endsWith("구")) {
+				return strArr[i];
+			}
+		}
 		
-		return "";
+		return null;
 	}
 	
 	

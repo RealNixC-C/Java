@@ -31,22 +31,22 @@ public class Quiz3 {
 		int count = 0;	
 		int index = 0;
 		
-		// indexOf를 이용해 반복해서 찾기
-//		index = str1.indexOf(str2);
-//		while (index != -1) {
-//			count ++;
-//			index += str2.length(); // 다음 검색 위치로이동
-//			index = str1.indexOf(str2, index); // 다음 위치에서 다시 검색
-//		}
-		
-		// 축약형: indexOf를 한 번만 쓰기
+		// indexOf를 이용해 반복해서 찾기 // 123AB123 AB //1
 		index = str1.indexOf(str2);
-		while ((index = str1.indexOf(str2, index))!= -1) {
+		while (index != -1) {
 			count ++;
 			index += str2.length(); // 다음 검색 위치로이동
+			index = str1.indexOf(str2, index); // 다음 위치에서 다시 검색
 		}
-		
 		return count;
+		
+		// 축약형: indexOf를 한 번만 쓰기
+//		index = str1.indexOf(str2);
+//		while ((index = str1.indexOf(str2, index))!= -1) {
+//			count ++;
+//			index += str2.length(); // 다음 검색 위치로이동
+//		}
+//		return count;
 	}
 	
 }
