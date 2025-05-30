@@ -48,7 +48,12 @@ public class BookController {
 	}
 	
 	public int ascBook() {
-		Collections.sort(bookList);
+		
+		if(bookList != null) {
+			Collections.sort(bookList);
+			return 1;
+		} 
+		return 0;
 	}
 	
 	

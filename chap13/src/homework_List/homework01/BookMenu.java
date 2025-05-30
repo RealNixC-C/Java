@@ -76,7 +76,6 @@ public class BookMenu {
 		case 3:
 			category = "어린이";
 			break;
-			
 		default:
 			category = "기타";
 			break;
@@ -143,7 +142,6 @@ public class BookMenu {
 	}
 	
 	public void ascBook() {
-		
 		if (bc.ascBook() == 1) {
 			System.out.println("정렬에 성공하였습니다.");
 		} else {
