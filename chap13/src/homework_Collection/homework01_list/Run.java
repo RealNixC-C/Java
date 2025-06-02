@@ -1,4 +1,4 @@
-package homework_List.homework01;
+package homework_Collection.homework01_list;
 
 public class Run {
 
