@@ -47,6 +47,7 @@ public class MemberController {
 		
 		TreeMap<String, String> treeMap = new TreeMap<String, String>();
 		
+		// iterator
 		Set<String> setMap = map.keySet();
 		Iterator<String> iterator = setMap.iterator();
 		while (iterator.hasNext()) {
@@ -56,6 +57,8 @@ public class MemberController {
 				treeMap.put(key, member.getName());
 			}
 		}
+		
+		// 향상된 for문
 //		for (String key : setMap) {
 //			Member member = map.get(key);
 //			if(member.getName().equals(name)) {
