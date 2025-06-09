@@ -25,10 +25,9 @@ public class Practice {
 		try (FileOutputStream os = new FileOutputStream("C:/Test/sub/나비야2.dat")) {
 			BufferedOutputStream bos = new BufferedOutputStream(os);
 			long start = System.nanoTime();
-//			Writer writer = new OutputStreamWriter(bos);
-			byte[] byteArr = str.getBytes();
-			os.write(byteArr);
-			os.flush();
+			Writer writer = new OutputStreamWriter(bos);
+			writer.write(str);
+			writer.flush();
 			long end = System.nanoTime();
 			System.out.println("총 걸린 시간: " + (end - start) + "ns");
 		} catch (IOException e) {
