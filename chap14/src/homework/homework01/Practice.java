@@ -10,8 +10,8 @@ public class Practice {
 	
 	public void method1(String str) { 
 		try (FileOutputStream fos = new FileOutputStream("C:/test/sub/나비야1.dat")) {
-			long start = System.nanoTime();
 			Writer writer = new OutputStreamWriter(fos);
+			long start = System.nanoTime();
 			writer.write(str);
 			writer.flush();
 			long end = System.nanoTime();
@@ -24,8 +24,8 @@ public class Practice {
 	public void method2(String str) { 
 		try (FileOutputStream os = new FileOutputStream("C:/Test/sub/나비야2.dat")) {
 			BufferedOutputStream bos = new BufferedOutputStream(os);
-			long start = System.nanoTime();
 			Writer writer = new OutputStreamWriter(bos);
+			long start = System.nanoTime();
 			writer.write(str);
 			writer.flush();
 			long end = System.nanoTime();

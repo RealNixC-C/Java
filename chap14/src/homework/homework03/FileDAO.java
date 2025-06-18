@@ -51,7 +51,14 @@ public class FileDAO {
 	}
 	
 	public void fileEdit(String file, String s) {
-		
+		try {
+			File newFile = new File("C:/test/homework1/" + file);
+			Writer writer = new FileWriter(newFile, true);
+			writer.write(s);
+			writer.flush();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 }

@@ -2,6 +2,7 @@ package homework.homework03;
 
 import java.util.Scanner;
 
+
 public class FileMenu {
 
 	Scanner sc = new Scanner(System.in);
@@ -41,24 +42,29 @@ public class FileMenu {
 				while (true) {
 					System.out.print("저장할 파일 명을 입력해주세요(ex. myFile.txt) : ");
 					String fileName = sc.nextLine();
-					if(fc.checkName(fileName)) {
+					Boolean isExist = fc.checkName(fileName); 
+					if(isExist) {
 						System.out.print("이미 존재하는 파일입니다. 덮어쓰시겠습니다? (y/n) : ");
-						if(sc.nextLine().equalsIgnoreCase("y")) {
+						String wantToOveride = sc.nextLine();
+						if("y".equalsIgnoreCase(wantToOveride)) {
 							fc.fileSave(fileName, strBuilder);
 							return;
-						} else if(sc.nextLine().equalsIgnoreCase("n")) {
-							continue;
-						} else {
-							System.out.println("잘못된 입력입니다.");
+						} 
+						if("n".equalsIgnoreCase(wantToOveride)) {
 							continue;
 						}
+						System.out.println("잘못된 입력입니다.");
 					} else {
 						fc.fileSave(fileName, strBuilder);
 						return;
 					}
 				}
 			}
-			strBuilder.append(str);
+			if(strBuilder.length() == 0) {
+				strBuilder.append(str);
+			} else {
+				strBuilder.append("\n" + str);
+			}
 		}
 	}
 	
@@ -75,7 +81,23 @@ public class FileMenu {
 	}
 	
 	public void fileEdit() {
-		
+		StringBuilder strBuilder = new StringBuilder();
+		System.out.print("수정할 파일 명 : ");
+		String fileName = sc.nextLine();
+		if (fc.checkName(fileName)) {
+			while (true) {
+				System.out.println("파일에 저장할 내용을 입력하세요.");
+				System.out.println("ex끝it 이라고 입력하면 종료됩니다.");
+				System.out.print("내용 : ");
+				String text = sc.nextLine();
+				if("ex끝it".equals(text)) break;
+				strBuilder.append("\n" + text);
+			}
+		} else {
+			System.out.println("없는 파일입니다.");
+			return;
+		}
+		fc.fileEdit(fileName, strBuilder);
 	}
 	
 }

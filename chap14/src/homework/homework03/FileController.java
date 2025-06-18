@@ -18,7 +18,8 @@ public class FileController {
 	}
 	
 	public void fileEdit(String file, StringBuilder sb) {
-		
+		String str = sb.toString();
+		fd.fileEdit(file, str);
 		
 	}
 	
