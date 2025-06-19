@@ -21,8 +21,9 @@ import lombok.Data;
  * 
  *
  */
-@Data
-@AllArgsConstructor
+//lombok 사용
+//@Data
+//@AllArgsConstructor
 public class Board {
 	
 	private int no;
