@@ -1,5 +1,7 @@
 package homework_01;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import homework_01.com.gn.controlloer.Bookcontroller;
@@ -11,6 +13,7 @@ public class BookStoreApplication {
 
 	private static Scanner sc = new Scanner(System.in);
 	private static Bookcontroller bc = new Bookcontroller();
+	private static List<Book> bookList = new ArrayList<Book>();
 	
 	public static void main(String[] args) {
 
@@ -31,14 +34,16 @@ public class BookStoreApplication {
 				System.out.println("잘못된 종류입니다. 다시 입력하세요.");
 				continue;
 			}
+			bc.insert(book);
+			
 			
 			while (true) {
 				System.out.print("입력을 종료하시겠습니까? (y/Y 입력 시 종료): ");
 				String exit = sc.nextLine();
 				if("y".equalsIgnoreCase(exit)) {
 					System.out.println("\n===== 도서 목록 =====");
-					bc.list();
-					bc.avgPrice();
+					printAll();
+					avgPrice(bc.list());
 					return;
 				} else if("n".equalsIgnoreCase(exit)) {
 					break;
@@ -69,7 +74,8 @@ public class BookStoreApplication {
 			break;
 		}
 		
-		// 이자리에 4번문제
+		// isbn수정코드 제일 마지막에
+		// book.recoverMissingDigit(isbn);
 		
 		while (true) {
 			try {
@@ -106,10 +112,24 @@ public class BookStoreApplication {
 		}
 		return result;
 	}
+
+
+	public static void avgPrice(List<Book> bookList) {
+		
+		int sum = 0;
+		for (Book book : bookList) {
+			sum += book.getPrice();
+		}
+		double avg = (double) sum / bookList.size();
+		System.out.printf("\n총 평균 가격 : %.2f원", avg);
+	}
 	
-	
-	
-	
+	public static void printAll() {
+		bookList = bc.list();
+		for (Book book : bookList) {
+			book.printinfo();
+		}
+	}
 	
 
 }
