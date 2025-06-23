@@ -22,8 +22,34 @@ public class Bookcontroller extends JDBCconnection{
 	
 	// insert를 수정하여 ArrayList가 아닌 DB에 저장하도록 변경
 	public void insert(Book book) {
-		bookList.add(book);
+		
+//		String sql = 
+//		
+//		conn.prepareStatement(null)
+		
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//	public void insert(Book book) {
+//		bookList.add(book);
+//	}
+	
+	
+	
+	
+	
 	
 //	public void insert(String isbn, int type, String price) {
 //		
